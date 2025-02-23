@@ -1,1 +1,267 @@
-<div>HELLO WORLD you are in authors</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+            <div class="left_1-1">
+              <img
+                src="images/profile.png"
+                width="156"
+                height="142"
+                alt="Profile picture"
+              />
+            </div>
+            <div class="left_1-2"><%=user.name%></div>
+            <div class="left_1-3"><%=user.profession%></div>
+            <div class="left_icons">
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img
+                    src="icon/Icons-dribbble.svg"
+                    class="icon-1"
+                    alt="Dribbble"
+                  />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img
+                    src="icon/Icons-facebook.svg"
+                    class="icon-1"
+                    alt="Facebook"
+                  />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img
+                    src="icon/Icons-instagram.svg"
+                    class="icon-1"
+                    alt="Instagram"
+                  />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img
+                    src="icon/Icons-twitter.svg"
+                    class="icon-1"
+                    alt="Twitter"
+                  />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img
+                    src="icon/Icons-linkedin.svg"
+                    class="icon-1"
+                    alt="LinkedIn"
+                  />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img
+                    src="icon/Icons-Youtube.svg"
+                    class="icon-1"
+                    alt="YouTube"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="marginer"></div>
+
+          <div class="left_2">
+            <div class="left_2-1"><span id="y">Age:</span><%=user.age%></div>
+            <div class="left_2-1">
+              <span id="y">Residence:</span><%=user.residence%>
+            </div>
+            <div class="left_2-1">
+              <span id="y">Address:</span><%=user.address%>
+            </div>
+            <div class="left_2-1">
+              <span id="y">Language:</span><%=user.language%>
+            </div>
+          </div>
+          <div class="marginer"></div>
+
+          <div class="left_3">
+            <div class="language">Languages</div>
+            <div class="left_3-1"><%=user.language[0]%><span>100%</span></div>
+            <div class="line">
+              <img
+                src="images/line_3.png"
+                alt="Language proficiency indicator"
+              />
+            </div>
+            <div class="left_3-1"><%=user.language[1]%><span>80%</span></div>
+            <div class="line">
+              <img
+                src="images/line_1.svg"
+                alt="Language proficiency indicator"
+              />
+            </div>
+            <div class="left_3-1"><%=user.language[2]%><span>60%</span></div>
+            <div class="line">
+              <img
+                src="images/line_2.svg"
+                alt="Language proficiency indicator"
+              />
+            </div>
+          </div>
+          <div class="marginer"></div>
+
+          <div class="left_4">
+            <div class="skills">Skills</div>
+            <div class="left_4-1"><%=user.skills[0]%><span>90%</span></div>
+            <div class="line">
+              <img src="images/line_4.svg" alt="Skill level indicator" />
+            </div>
+            <div class="left_4-1"><%=user.skills[1]%><span>85%</span></div>
+            <div class="line">
+              <img src="images/line_5.svg" alt="Skill level indicator" />
+            </div>
+            <div class="left_4-1"><%=user.skills[2]%><span>80%</span></div>
+            <div class="line">
+              <img src="images/line_6.svg" alt="Skill level indicator" />
+            </div>
+            <div class="left_4-1"><%=user.skills[3]%><span>80%</span></div>
+            <div class="line">
+              <img src="images/line_7.svg" alt="Skill level indicator" />
+            </div>
+            <div class="left_4-1"><%=user.skills[4]%><span>75%</span></div>
+            <div class="line">
+              <img src="images/line_8.svg" alt="Skill level indicator" />
+            </div>
+          </div>
+          <div class="marginer"></div>
+
+          <div class="left_5">
+            <div class="extra_skills">Extra skills</div>
+            <div class="left_5-1">
+              <img
+                src="images/extraskill_1.svg"
+                alt="Extra skill indicator"
+              /><%=user.extra_skills[0]%>
+            </div>
+            <div class="left_5-1">
+              <img
+                src="images/extraskill_1.svg"
+                alt="Extra skill indicator"
+              /><%=user.extra_skills[1]%>
+            </div>
+            <div class="left_5-1">
+              <img
+                src="images/extraskill_1.svg"
+                alt="Extra skill indicator"
+              /><%=user.extra_skills[2]%>
+            </div>
+            <div class="left_5-1">
+              <img
+                src="images/extraskill_1.svg"
+                alt="Extra skill indicator"
+              /><%=user.extra_skills[3]%>
+            </div>
+          </div>
+          <div class="marginer"></div>
+        </div>
+        <div class="midd_frame">
+          <div class="midd_container">     
+            <div class="box_container">
+            <div>
+              <span class="span_text">Software Engineer in IT Company</span>
+            </div>
+            <div class="lorem_ipsum">Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit. Et, volutpat feugiat 
+              placerat lobortis. Natoque rutrum semper sed 
+              suspendisse nunc lectus.
+         > </div>
+             <!-- <img  class="button" src="box_images/buttonclick.svg" alt=""> -->
+            </div>
+         
+            <div class="box_img" >
+              <img src="box_images/Your Image 1.png" alt="">
+            </div>
+         
+          </div>
+          
+          <div class="my_servis">my services</div>
+          <div class="lorem_tex">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia 
+            consequat duis enim velit mollit. lorem ipsum</div>
+            <div class="servise_container"> 
+              <div class="Web_dev">
+                <img class="game_dev" src="box_images/coding.svg" alt="">
+     
+            <span class="span_tex1">web development</span>
+            <span class="span_tex2">blog, e-commerce</span>
+            </div>
+            <div class="Web_dev">
+              <img src="box_images/illustration.svg" alt="">
+          <span class="span_tex1">uI/uX design</span>
+          <span class="span_tex2">Mobile app, website design</span>
+          </div>
+          <div class="Web_dev">
+            <img src="box_images/Microphone.svg" alt="">
+        <span class="span_tex1">sound design</span>
+        <span class="span_tex2">Voice Over, Beat Making</span>
+        </div>
+        <div class="Web_dev">
+          <img src="box_images/game-development.svg" alt="">
+      <span class="span_tex1" >game design</span>
+      <span class="span_tex2">Character Design, Props & Objects</span>
+      </div>
+      <div class="Web_dev">
+        <img src="box_images/Photographer.svg" alt="">
+    <span class="span_tex1">photography</span>
+    <span class="span_tex2">photography</span>
+    </div>
+    <div class="Web_dev">
+      <!-- <img src="box_images/frame.svg" alt=""> -->
+  <span class="span_bot">advertising</span>
+  <span class="span_bot1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Vitae nulla diam in ac dictum a urna viverra morbi. </span>
+    <span class="span_button">ORDER NOW ➤</span>
+  </div>
+
+  
+          </div>
+        </div>
+
+        <div class="right_frame">
+          <div class="contrast">
+            <img class="right_menyu_top_img" src="images/Contrast.svg" alt="">
+          </div>
+          <div class="right_menu">
+            <div class="home_container">
+              <div class="home_text">Home</div>
+              <div class="home_icon">
+                <img src="images/Home.svg" alt="">
+              </div>
+            </div>
+            <img class="right_menu_box" src="images/file-code.svg" alt="">
+            <img class="right_menu_box" src="images/cv.svg" alt="">
+            <img class="right_menu_box" src="images/Vector.svg" alt="">
+            <img class="right_menu_box" src="images/Blog.svg" alt="">
+            <img class="right_menu_box" src="images/Contact.svg" alt="">
+          </div>
+        </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
