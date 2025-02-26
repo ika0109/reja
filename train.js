@@ -7,18 +7,8 @@
 
 // Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
 // MASALAN countLetter("e", "engineer") 3ni return qiladi.
-function countLetter(a, b) {
-    let count = 0;
-    for (let i = 0; i < b.length; i++) {
-        if (b[i] === a) {
-            count++;
-        }
-    }
-    return count;
-}
 
 
-console.log(countLetter("e", "engineer"));
 // console.log("Jack Ma maslahatlari:");
 // const list = [
 //   "yaxsi talaba boling", //0=20
