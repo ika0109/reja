@@ -1,17 +1,88 @@
-function countDigits(str) {
-    let count = 0;
+
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
+
+//   qoldiq() {
+//     const soat = new Date().getHours();
+//     const minut = new Date().getMinutes();
+//     return `hozir ${soat}:${minut}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
+//   }
+
+//   sotish(mahsulot, miqdor) {
+//     const soat = new Date().getHours();
+//     const minut = new Date().getMinutes();
     
-    for (let i = 0; i < str.length; i++) {
-      if (str[i] >= '0' && str[i] <= '9') {
-        count++;
-      }
-    }
+//     if(mahsulot === 'non') {
+//       this.non -= miqdor;
+//     } else if(mahsulot === 'lagmon') {
+//       this.lagmon -= miqdor;
+//     } else if(mahsulot === 'cola') {
+//       this.cola -= miqdor;
+//     }
     
-    return count;
-  }
+//     return `hozir ${soat}:${minut}da ${miqdor}ta ${mahsulot} sotildi`;
+//   }
+
+//   qabul(mahsulot, miqdor) {
+//     const soat = new Date().getHours();
+//     const minut = new Date().getMinutes();
+    
+//     if(mahsulot === 'non') {
+//       this.non += miqdor;
+//     } else if(mahsulot === 'lagmon') {
+//       this.lagmon += miqdor;
+//     } else if(mahsulot === 'cola') {
+//       this.cola += miqdor;
+//     }
+    
+//     return `hozir ${soat}:${minut}da ${miqdor}ta ${mahsulot} qabul qilindi`;
+//   }
+// }
+// const shop = new Shop(4, 5, 2);
+
+// console.log(shop.qoldiq());
+// // Misol: "hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud!"
+
+// console.log(shop.sotish('non', 3));
+// // Misol: "hozir 20:41da 3ta non sotildi, qolgan non soni: 1ta"
+
+// console.log(shop.qabul('cola', 4));
+// // Misol: "hozir 20:42da 4ta cola qabul qilindi, jami cola soni: 6ta"
+
+// console.log(shop.qoldiq());
+// // Misol: "hozir 20:43da 1ta non, 5ta lagmon va 6ta cola mavjud!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function countDigits(str) {
+//     let count = 0;
+    
+//     for (let i = 0; i < str.length; i++) {
+//       if (str[i] >= '0' && str[i] <= '9') {
+//         count++;
+//       }
+//     }
+    
+//     return count;
+//   }
   
   
-  console.log(countDigits("ad2a54y79wet0sfgb9")); 
+//   console.log(countDigits("ad2a54y79wet0sfgb9")); 
 
 
 
