@@ -1,65 +1,49 @@
-
-// class Shop {
-//   constructor(non, lagmon, cola) {
-//     this.non = non;
-//     this.lagmon = lagmon;
-//     this.cola = cola;
-//   }
-
-//   qoldiq() {
-//     const soat = new Date().getHours();
-//     const minut = new Date().getMinutes();
-//     return `hozir ${soat}:${minut}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
-//   }
-
-//   sotish(mahsulot, miqdor) {
-//     const soat = new Date().getHours();
-//     const minut = new Date().getMinutes();
+class Shop {
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
+  sotish(oziq_ovqat, miqdor) {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const time = `${hours}:${minutes}`;
     
-//     if(mahsulot === 'non') {
-//       this.non -= miqdor;
-//     } else if(mahsulot === 'lagmon') {
-//       this.lagmon -= miqdor;
-//     } else if(mahsulot === 'cola') {
-//       this.cola -= miqdor;
-//     }
+    if (this[oziq_ovqat] >= miqdor) {
+      this[oziq_ovqat] -= miqdor;
+      return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
+    } else {
+      return `Yetarli ${oziq_ovqat} yo'q!`;
+    }
     
-//     return `hozir ${soat}:${minut}da ${miqdor}ta ${mahsulot} sotildi`;
-//   }
-
-//   qabul(mahsulot, miqdor) {
-//     const soat = new Date().getHours();
-//     const minut = new Date().getMinutes();
+  }
+  
+  qabul(oziq_ovqat, soni) {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const time = `${hours}:${minutes}`;
     
-//     if(mahsulot === 'non') {
-//       this.non += miqdor;
-//     } else if(mahsulot === 'lagmon') {
-//       this.lagmon += miqdor;
-//     } else if(mahsulot === 'cola') {
-//       this.cola += miqdor;
-//     }
+    this[oziq_ovqat] += soni;
+    return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
+  }
+
+  qoldiq() {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const time = `${hours}:${minutes}`;
     
-//     return `hozir ${soat}:${minut}da ${miqdor}ta ${mahsulot} qabul qilindi`;
-//   }
-// }
-// const shop = new Shop(4, 5, 2);
+    return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
+  }
+}
 
-// console.log(shop.qoldiq());
-// // Misol: "hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud!"
+const shop = new Shop(4, 5, 2);
 
-// console.log(shop.sotish('non', 3));
-// // Misol: "hozir 20:41da 3ta non sotildi, qolgan non soni: 1ta"
-
-// console.log(shop.qabul('cola', 4));
-// // Misol: "hozir 20:42da 4ta cola qabul qilindi, jami cola soni: 6ta"
-
-// console.log(shop.qoldiq());
-// // Misol: "hozir 20:43da 1ta non, 5ta lagmon va 6ta cola mavjud!"
-
-
-
-
-
+console.log(shop.sotish('non', 3));
+console.log(shop.qabul('cola', 4));
+console.log(shop.qoldiq());
 
 
 
