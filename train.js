@@ -1,14 +1,14 @@
+const moment = require('moment');
+
 class Shop {
   constructor(non, lagmon, cola) {
     this.non = non;
     this.lagmon = lagmon;
     this.cola = cola;
   }
+  
   sotish(oziq_ovqat, miqdor) {
-    const now = new Date();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const time = `${hours}:${minutes}`;
+    const time = moment().format('HH:mm');
     
     if (this[oziq_ovqat] >= miqdor) {
       this[oziq_ovqat] -= miqdor;
@@ -16,34 +16,36 @@ class Shop {
     } else {
       return `Yetarli ${oziq_ovqat} yo'q!`;
     }
-    
   }
   
   qabul(oziq_ovqat, soni) {
-    const now = new Date();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const time = `${hours}:${minutes}`;
+    const time = moment().format('HH:mm');
     
     this[oziq_ovqat] += soni;
     return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
   }
-
+  
   qoldiq() {
-    const now = new Date();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const time = `${hours}:${minutes}`;
+    const time = moment().format('HH:mm');
     
     return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
   }
 }
 
+
 const shop = new Shop(4, 5, 2);
+console.log(shop.qoldiq());
+
 
 console.log(shop.sotish('non', 3));
+
+
 console.log(shop.qabul('cola', 4));
+
+
 console.log(shop.qoldiq());
+
+
 
 
 
