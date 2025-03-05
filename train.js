@@ -12,7 +12,7 @@ class Shop {
     
     if (this[oziq_ovqat] >= miqdor) {
       this[oziq_ovqat] -= miqdor;
-      return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
+      return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola sotildi!`;
     } else {
       return `Yetarli ${oziq_ovqat} yo'q!`;
     }
@@ -22,7 +22,7 @@ class Shop {
     const time = moment().format('HH:mm');
     
     this[oziq_ovqat] += soni;
-    return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
+    return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola qabul qilindi!`;
   }
   
   qoldiq() {
@@ -34,7 +34,7 @@ class Shop {
 
 
 const shop = new Shop(4, 5, 2);
-console.log(shop.qoldiq());
+// console.log(shop.qoldiq());
 
 
 console.log(shop.sotish('non', 3));
@@ -48,51 +48,29 @@ console.log(shop.qoldiq());
 
 
 
-
-
-
-
-
-
-
 // function countDigits(str) {
 //     let count = 0;
-    
+
 //     for (let i = 0; i < str.length; i++) {
 //       if (str[i] >= '0' && str[i] <= '9') {
 //         count++;
 //       }
 //     }
-    
+
 //     return count;
 //   }
-  
-  
-//   console.log(countDigits("ad2a54y79wet0sfgb9")); 
 
-
-
-
-
-
-
-
-
-
-
-
-
+//   console.log(countDigits("ad2a54y79wet0sfgb9"));
 
 // MITASK’larni train.js fileda yozasiz!
 
 // yozish tartibingiz:
 
 // Masalani izohi
-// A-TASK: 
+// A-TASK:
 
 // Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
 // MASALAN countLetter("e", "engineer") 3ni return qiladi.
-
 
 // console.log("Jack Ma maslahatlari:");
 // const list = [
@@ -166,7 +144,6 @@ console.log(shop.qoldiq());
 //         console.log("ERROR:", err);
 //     });
 // console.log("passed here 1");
-
 
 //asyn/await
 // async function run() {
