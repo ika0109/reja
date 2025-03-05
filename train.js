@@ -1,52 +1,57 @@
-const moment = require('moment');
+function checkContent(a, b) {
 
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
-  
-  sotish(oziq_ovqat, miqdor) {
-    const time = moment().format('HH:mm');
-    
-    if (this[oziq_ovqat] >= miqdor) {
-      this[oziq_ovqat] -= miqdor;
-      return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola sotildi!`;
-    } else {
-      return `Yetarli ${oziq_ovqat} yo'q!`;
-    }
-  }
-  
-  qabul(oziq_ovqat, soni) {
-    const time = moment().format('HH:mm');
-    
-    this[oziq_ovqat] += soni;
-    return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola qabul qilindi!`;
-  }
-  
-  qoldiq() {
-    const time = moment().format('HH:mm');
-    
-    return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
-  }
+  const tartiblaA = [...a].sort().join("");
+  const tartiblaB = [...b].sort().join("");
+
+ 
+  return tartiblaA === tartiblaB;
 }
 
 
-const shop = new Shop(4, 5, 2);
+console.log(checkContent("mitgroup", "gmitroup"));
+
+// const moment = require('moment');
+
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
+
+//   sotish(oziq_ovqat, miqdor) {
+//     const time = moment().format('HH:mm');
+
+//     if (this[oziq_ovqat] >= miqdor) {
+//       this[oziq_ovqat] -= miqdor;
+//       return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola sotildi!`;
+//     } else {
+//       return `Yetarli ${oziq_ovqat} yo'q!`;
+//     }
+//   }
+
+//   qabul(oziq_ovqat, soni) {
+//     const time = moment().format('HH:mm');
+
+//     this[oziq_ovqat] += soni;
+//     return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola qabul qilindi!`;
+//   }
+
+//   qoldiq() {
+//     const time = moment().format('HH:mm');
+
+//     return `hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`;
+//   }
+// }
+
+// const shop = new Shop(4, 5, 2);
+// // console.log(shop.qoldiq());
+
+// console.log(shop.sotish('non', 3));
+
+// console.log(shop.qabul('cola', 4));
+
 // console.log(shop.qoldiq());
-
-
-console.log(shop.sotish('non', 3));
-
-
-console.log(shop.qabul('cola', 4));
-
-
-console.log(shop.qoldiq());
-
-
-
 
 // function countDigits(str) {
 //     let count = 0;
