@@ -1,14 +1,30 @@
-function checkContent(a, b) {
-
-  const tartiblaA = [...a].sort().join("");
-  const tartiblaB = [...b].sort().join("");
-
- 
-  return tartiblaA === tartiblaB;
+function getReverse(a) {
+  return [...a].reverse().join('');
 }
 
 
-console.log(checkContent("mitgroup", "gmitroup"));
+console.log(getReverse("hello"));
+
+
+
+
+
+
+
+
+
+
+// function checkContent(a, b) {
+
+//   const tartiblaA = [...a].sort().join("");
+//   const tartiblaB = [...b].sort().join("");
+
+ 
+//   return tartiblaA === tartiblaB;
+// }
+
+
+// console.log(checkContent("mitgroup", "gmitroup"));
 
 // const moment = require('moment');
 
