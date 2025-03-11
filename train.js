@@ -1,12 +1,10 @@
-function getReverse(a) {
-  return [...a].reverse().join('');
+function findDoublers(str) {
+  return [...str].some((char, _, arr) => arr.indexOf(char) !== arr.lastIndexOf(char));
 }
 
 
-console.log(getReverse("hello"));
-
-
-
+console.log(findDoublers("hello")); 
+console.log(findDoublers("world")); 
 
 
 
